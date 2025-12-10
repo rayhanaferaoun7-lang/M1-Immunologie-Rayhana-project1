@@ -1,9 +1,13 @@
 #feraoun  immunologie 13.12.2025
 #Bendellaa sara,
-ouadah khawla,
-benhamed zohor,
-benzeghadi saliha,
-derfouf sihem
+
+#ouadah khawla,
+
+#benhamed zohor,
+
+#benzeghadi saliha,
+
+#derfouf sihem
 
 import pandas as pd 
 
