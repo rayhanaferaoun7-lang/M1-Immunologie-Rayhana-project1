@@ -28,14 +28,14 @@ print("*****creation et affichage*****")
 print(df) 
 
 
-#Affichage de tableau 
+#1)Affichage de tableau 
 
 print ("operation ") 
 
 
 print("colonne Longeur")
 
-#selectioneer la colonne "Longeur"
+#2)selectioneer la colonne "Longeur"
 
 Longeur=df["Longeur"]
 
