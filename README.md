@@ -92,7 +92,7 @@ print(f"L'ecran type du pourcentage GC:{std_gc:.2f}")
 
 print(f"L'ecran type de la langeur GC:{std_gc:.2f}")
 
-
-
+#8)sauvegarder de tableau final dans un fichier CSV
+df.to_csv("tableau_sequences.csv", index=False)
 
 
