@@ -9,9 +9,9 @@
 
 #derfouf sihem
 
-import pandas as pd 
+import pandas as pd
 
-#Données :sequence ADN,Longeur,pourcentage de GC 
+#Données :sequence ADN,Longeur,pourcentage de GC
 data ={
 "sequence":["ATGCGTACGTA","GCTAGCTAGGCC","ATGCGCGTAAGA","TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGAT"],
 
@@ -73,10 +73,24 @@ df["catégorie GC"] = df["pourcentage GC"].apply(lambda x:"Riche"if x>55 else ("
 print(df) 
 
 #6)Ajouter une colonne comptant les "G"
+
 df["Nombre de G"]= df["sequence"].str.count("G")
+
 print("****Nombre de G ajoutés****")
+
 print(df,"\n")
 
+#7)calcule l'écran type de %GC et de la langeure des sequence
+
+print("**calcule l'ecran type de %GC et de la langeure des sequence***")
+
+std_GC = df["pourcentage GC"].std()
+
+std_longeur = df["Longeur"].std()
+
+print(f"L'ecran type du pourcentage GC:{std_gc:.2f}")
+
+print(f"L'ecran type de la langeur GC:{std_gc:.2f}")
 
 
 
